@@ -1,85 +1,184 @@
 body {
   margin: 0;
-  background: #f7f8fa;
+  background: #f4f2ed;
   font-family: 'Inter', 'Noto Sans KR', Arial, sans-serif;
-}
-
-.motive-container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.motive-header {
-  width: 100%;
-  max-width: 480px;
-  margin: 0 auto;
-  padding: 48px 0 24px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.motive-logo {
-  font-size: 2.5rem;
-  font-weight: 800;
-  letter-spacing: 0.1em;
   color: #222;
-  margin-bottom: 12px;
 }
 
-.motive-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #444;
-  margin-bottom: 4px;
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px 32px 16px;
 }
 
-.motive-subtitle {
-  font-size: 1.1rem;
-  color: #888;
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+/* 메인 로고 크게 */
+.main-logo {
+  width: 320px;
+  max-width: 90vw;
+  height: auto;
   margin-bottom: 18px;
+  display: block;
 }
-
-.motive-desc {
-  font-size: 1.1rem;
-  color: #333;
-  margin-bottom: 32px;
+.subtitle {
+  font-size: 1.5rem;
+  color: #444;
   text-align: center;
+  margin-top: 18px;
+  margin-bottom: 0;
   line-height: 1.5;
 }
 
-.motive-images {
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 120px 0 32px 0;
+  letter-spacing: 0.04em;
+}
+
+.product-list, .team-list {
   display: flex;
-  gap: 16px;
-  margin-bottom: 32px;
-}
-
-.motive-img-frame {
-  width: 80px;
-  height: 120px;
-  background: #e3e6ea;
-  border-radius: 18px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-  border: 2px solid #fff;
-}
-
-.motive-footer {
+  justify-content: center;
+  gap: 32px;
+  max-width: 1000px;
   width: 100%;
-  max-width: 480px;
-  margin: 0 auto;
-  padding: 24px 0 32px 0;
+  margin: 0 auto 40px auto;
+  flex-wrap: nowrap;
+}
+.product-card, .team-card {
+  flex: 1 1 0;
+  min-width: 320px;
+  max-width: 440px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  padding: 40px 32px 32px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: box-shadow 0.2s;
+}
+.product-card:hover, .team-card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+}
+.product-icon, .team-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 16px;
+  margin-bottom: 28px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  align-self: flex-start;
+}
+.product-info h3, .team-info h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+  text-align: left;
+}
+.product-info p, .team-info p {
+  font-size: 1rem;
+  color: #444;
+  margin: 0 0 24px 0;
+  text-align: left;
+  line-height: 1.7;
+}
+.store-links {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  margin-top: auto;
+}
+.store-badge {
+  height: 36px;
+  width: auto;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+}
+
+.team-section {
+  margin-bottom: 80px;
+}
+.team-list {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.team-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  padding: 32px 28px 24px 28px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: box-shadow 0.2s;
+}
+.team-card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+}
+.team-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 16px;
+  margin-bottom: 18px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  align-self: flex-start;
+}
+.team-info h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  text-align: left;
+}
+.team-info p {
+  font-size: 0.98rem;
+  color: #444;
+  margin: 0;
+  text-align: left;
+}
+.team-card.placeholder { display: none; }
+
+.footer {
   text-align: center;
   color: #888;
   font-size: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+  margin-top: 48px;
+  padding: 32px 0 0 0;
+  border-top: 1.5px solid #e0ddd7;
 }
-
-.motive-footer a {
+.footer a {
   color: #888;
   text-decoration: underline;
+  font-size: 1rem;
+}
+
+@media (max-width: 900px) {
+  .product-list, .team-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+  .product-card, .team-card {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+  .container {
+    padding: 0 4px 32px 4px;
+  }
 } 
