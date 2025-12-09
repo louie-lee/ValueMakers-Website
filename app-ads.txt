@@ -1,0 +1,3 @@
+google.com, pub-3002910908041300, DIRECT, f08c47fec0942fa0
+facebook.com, 346922443190888, RESELLER, c3e20eee3f780d68
+pubmatic.com, 159856, DIRECT, 5d62403b186f2ace
