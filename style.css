@@ -77,6 +77,11 @@ body {
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   align-self: flex-start;
 }
+.product-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
 .product-info h3, .team-info h3 {
   font-size: 1.2rem;
   font-weight: 700;
@@ -95,6 +100,8 @@ body {
   gap: 10px;
   justify-content: flex-start;
   margin-top: auto;
+  padding-top: 16px;
+  align-items: flex-end;
 }
 .store-badge {
   height: 36px;
