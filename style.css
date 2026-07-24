@@ -70,7 +70,7 @@ body {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto 40px auto;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 .product-card, .team-card {
   flex: 1 1 0;
